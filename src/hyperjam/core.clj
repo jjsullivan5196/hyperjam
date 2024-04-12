@@ -40,6 +40,7 @@
                [:head [:title "REPL"]]
                [:body
                 ~@htmz
+                [:style "table,th,td { border: 1px solid black; }"]
                 [:table {:id "next-eval"}]
                 [:form {:action "/hyperjam.core/heval#next-eval"}
                  [:input {:name "form" :type "text"}]
